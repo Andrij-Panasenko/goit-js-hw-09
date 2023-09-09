@@ -22,11 +22,7 @@ const options = {
     const selectedDate = selectedDates[0].getTime();
     const currentDate = Date.now();
 
-    if (selectedDate <= currentDate) {
-      alert('Please choose a date in the future');
-    } else {
-      startBtn.disabled = false;
-    }
+    selectedDate <= currentDate ? alert('Please choose a date in the future') : startBtn.disabled = false;
   },
 };
 
