@@ -24,7 +24,7 @@ function createPromise(position, delay) {
       const shouldResolve = Math.random() > 0.3;
 
       if (shouldResolve) {
-        resolve(`%c ✅ Fulfilled promise ${position} in ${delay} ms`);
+        resolve(`%c ✅ Resolved promise ${position} in ${delay} ms`);
       } else {
         reject(`%c ❌ Rejected promise ${position} in ${delay} ms`);
       }
