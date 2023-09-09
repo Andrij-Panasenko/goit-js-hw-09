@@ -17,7 +17,6 @@ function onStartClick() {
 
   intervalId = setInterval(() => { 
     document.body.style.backgroundColor = getRandomHexColor();
-    isActive = true;
   }, 1000)
 };
 
