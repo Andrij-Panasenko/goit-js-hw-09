@@ -21,8 +21,13 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0].getTime();
     const currentDate = Date.now();
-
-    selectedDate <= currentDate ? alert('Please choose a date in the future') : startBtn.disabled = false;
+    
+    if (selectedDate <= currentDate) {
+      alert('Please choose a date in the future');
+      inputDate._flatpickr.setDate(new Date());
+    } else {
+      startBtn.disabled = false;
+    }
   },
 };
 
