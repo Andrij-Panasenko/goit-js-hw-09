@@ -44,7 +44,7 @@ function startCounterHandler() {
       clearInterval(countDown);
       startBtn.disabled = false;
     }
-  }, 100);
+  }, 1000);
 }
 
 // відмальовує інтерфейс
